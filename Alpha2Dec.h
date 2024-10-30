@@ -16,3 +16,11 @@ int stringtoInt(std::string c){
     }
     return x;
 }
+
+std::vector<int> stringofInt(std::string c){
+    std::vector<int> v;
+    for(int i = 0; i < c.length(); i++){
+        v.push_back(chartoInt(c[i]));
+    }
+    return v;
+}
