@@ -17,8 +17,8 @@ int stringtoInt(std::string c){
     return x;
 }
 
-std::vector<int> stringofInt(std::string c){
-    std::vector<int> v;
+int* stringofInt(std::string c){
+    int* v = new int[c.length()];
     for(int i = 0; i < c.length(); i++){
         v.push_back(chartoInt(c[i]));
     }
